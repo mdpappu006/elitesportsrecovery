@@ -1,0 +1,464 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+    font-family: sans-serif,monoscape;
+}
+ul{
+	padding: 0;
+}
+ul li{
+	list-style: none;
+	display: inline-block;
+}
+a{
+	text-decoration: none
+}
+
+h2{
+	text-align: center;
+	margin-bottom: 30px;
+	color: #3da3e6;
+    font-weight: 700;
+}
+a.nav-link:hover,.navbar-nav .nav-item.active a.nav-link {
+    background: #3da3e6;
+    color: #fff!important;
+}
+
+.header-section {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    background: #fff;
+    padding: 10px 0px;
+    box-shadow: 0px 0px 12px #292929;
+    width: 100%;
+    transition: 0.5s;
+
+}
+
+/* Sticky section css */
+.header-section.sticky{
+	background: #55b6c7;
+	transition: 0.5s;
+}
+
+.header-section.sticky ul li a{
+	color: #fff!important;
+}
+/* End sticky section css */
+
+.header-bottom-left img {
+    width: 115px;
+    transition: 0.3s;
+}
+
+.header-bottom-right ul {
+    margin: 0;
+    margin-top: 0.5rem;
+    text-align: right!important;
+    width: 100%;
+    display: block;
+}
+.header-bottom-right ul li a {
+    color: #3da3e6!important;
+    font-weight: bold;
+    padding: 10px 25px!important;
+    display: block;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.header-bottom-right ul li:last-child a {
+    padding-right: 0;
+    
+}
+.header-social ul {
+    text-align: right;
+    margin: 0;
+    margin-top: 14px;
+}
+
+
+.header-social ul li a {
+    display: block;
+    color: #3da3e6;
+    padding: 8px 10px;
+    font-size: 22px;
+}
+
+
+/*===============
+ Banner section
+ ================*/
+.banner-section{
+	position: relative;
+}
+.banner-section:after {
+    content: '';
+    background: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+.banner-section img {
+    height: 700px;
+    width: 100%;
+}
+.banner-text {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: 99;
+    color: #fff;
+}
+.banner-text h1 {
+    text-transform: capitalize;
+    font-size: 38px;
+    font-weight: 900;
+    text-align: center;
+}
+.banner-text p {
+    font-size: 30px;
+    color: #2cdffb;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.banner-text p span{
+    margin: 0px 10px;
+}
+p.last-one {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: lowercase;
+    z-index: 99;
+}
+
+/*About us page */
+.about .banner-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.about img{
+    height: 500px; 
+}
+/*=================
+ Therapy section
+ ==================*/
+
+.wet-therapy-section a{
+	display: block;
+}
+.wet-therapy-section img{
+	width: 100%;
+	height: 400px;
+	transition: 0.6s ease;
+}
+.wet-therapy-section:after{
+	content: '';
+    background: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+
+.wet-therapy-section h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff7f7;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 25px;
+    z-index: 99;
+}
+
+.wet-therapy-section {
+    position: relative;
+    overflow: hidden;
+}
+.wet-therapy-section:hover a img{
+	transform: scale(1.2);
+}
+
+
+
+/*===============
+Normatec section css 
+=================*/
+.faq-section.mt-5.mb-5 {
+    background: #ebf2ff;
+    padding: 50px 0px;
+}
+.faq-section h3 {
+    font-weight: 700;
+    font-size: 25px;
+    color: #232323;
+    margin-bottom: 15px;
+}
+.instruction ul li {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.accordion-button {
+    color: #2d2d2d;
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: none;
+    background: none!important;
+}
+.accordion-button:not(.collapsed) {
+    color: #3da3e6;
+    background-color: #e7f1ff;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #ddd;
+}
+.faq-right img {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+}
+div#accordionExample{
+	border-bottom: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+.normatec-section.mt-5 {
+    background: #55B6C7;
+    padding: 50px 0px;
+}
+.normatec-section.mt-5 h2{
+	color: #fff;
+}
+
+
+/*=============
+Who section start 
+================= */
+.who-right {
+    padding: 0px 25px;
+    padding-right: 0;
+}
+.who-right h3 {
+    font-weight: 700;
+    color: #3a3a3a;
+    text-transform: capitalize;
+}
+.who-right p{
+    color: #2f2e2e;
+    font-weight: 600;
+}
+
+
+
+/*================== 
+Contact section css 
+=================== */
+.contact-left p {
+    margin-bottom: 10px;
+    line-height: 2;
+    font-size: 22px;
+    color: #fff;
+}
+.contact-left {
+    margin-top: 100px;
+}
+.header-social.contact ul {
+    text-align: left;
+    margin: 0;
+    margin-top: 0;
+}
+
+.form-control:focus {
+	box-shadow: inherit;
+}
+.form-label {
+    margin-bottom: .5rem;
+    color: #fff;
+}
+.contact-left h3 {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 36px;
+}
+.contact-left p a {
+    color: #fff;
+    font-size: 17px;
+    text-decoration: underline;
+}
+.contact-us-section.mt-5 {
+    background: #55B6C7;
+    padding: 50px 0px;
+}
+
+.contact-us-section.mt-5 h2 {
+    color: #fff;
+}
+.header-social.contact ul li a {
+    display: block;
+    color: #fff;
+    padding: 8px 5px;
+    font-size: 22px;
+}
+button.btn {
+    background: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    border: 2px solid #ddd;
+}
+button.btn:hover {
+    background: transparent;
+    color: #fff;
+}
+
+/*====================
+Footer section css 
+=====================*/
+.footer-left img{
+	width: 150px;
+}
+.footer-top {
+    background: #272727;
+    padding: 40px 0px;
+}
+.footer-left p {
+    color: #fff;
+    margin-top: 15px;
+    color: #dedede;
+    margin-bottom: 0;
+}
+.footer-top h3{
+	color: #fff;
+}
+.footer-middle ul li {
+    list-style: none;
+    display: block;
+}
+.footer-middle ul li a {
+    color: #a9a4a4;
+    padding: 5px 0px;
+    display: block;
+}
+.footer-middle ul li a:hover {
+    color: #fff;
+    transition: 0.3s;
+}
+.footer-right p {
+    color: #fff;
+    margin-bottom: 0;
+}
+.header-social.footer ul{
+	text-align: left;
+	margin-top: 0;
+}
+.footer-right p a,.header-social.footer ul li a{
+	color: #a9a4a4!important;
+}
+
+.footer-bottom {
+    border-top: 1px solid #616060;
+    background: #191919;
+}
+.copyright-section p {
+    color: #c1c1c1;
+    text-align: center;
+    margin: 0;
+    padding: 15px 0px;
+}
+
+
+
+
+/*
+===========================
+scroll to top 
+===========================
+*/
+.scrollToTop {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    z-index: 999;
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+    border-radius: 5px;
+    -webkit-transform: translateY(150px);
+    -ms-transform: translateY(150px);
+    transform: translateY(150px);
+    background: #05c3de;
+    text-align: center;
+    font-size: 16px;
+}
+.scrollToTop.active {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    animation: bounceInDown 2s;
+    -webkit-animation: bounceInDown 2s;
+    -moz-animation: bounceInDown 2s;
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px)
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px)
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px)
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown
+}
+
+/*
+==================================
+Scroll to top css end
+===================================
+*/
