@@ -52,15 +52,21 @@ Max width 991px
 */
 @media (max-width:991px){
 	/* Nav */
+	
 	.header-section.sticky ul li a{
 		color: #3da3e6!important;
 	}
 	.header-section.sticky .header-social ul li a{
-		color: #fff!important;
+		color: #000!important;
 	}
 	.header-section.sticky ul li a:hover{
 		color: #fff!important;
 	}
+	.header-section.sticky .header-social ul{
+		margin-top: 14px;
+		transition: 0.3s;
+	}
+	
 	
 	nav.navbar {
 	    position: absolute;
@@ -76,10 +82,18 @@ Max width 991px
 	button.navbar-toggler:focus {
 	    box-shadow: none;
 	}
+	.navbar-light .navbar-toggler {
+	    color: rgba(0,0,0,.55);
+	    border-color: rgb(187 182 182);
+	}
 	.header-bottom-right ul {
 	    margin: 0;
 	    margin-top: 3.9rem;
 	    text-align: right;
+	    background: #264059;
+	}
+	.header-section.sticky .header-bottom-right ul {
+	    margin-top: 3.9rem;
 	    background: #fff;
 	}
 	.header-bottom-right ul li a {
@@ -95,7 +109,7 @@ Max width 991px
 	.header-bottom-left img {
 	    width: 100px;
 	}
-	.header-social ul {
+	.header-section .header-social ul {
 	    position: absolute;
 	    top: 5px;
 	    right: 100px;
@@ -106,21 +120,27 @@ Max width 991px
 	.banner-section.about img {
 	    height: 350px;
 	}
-	.banner-text h1 {
-	    text-transform: capitalize;
-	    font-size: 24px;
-	}
+	
 	.banner-text p {
-	    font-size: 20px;
+	    font-size: 28px;
 	}
 	p.last-one {
-	    font-size: 15px;
+	    font-size: 16px;
+	    width: 100%;
 	}
 
-	iframe {
-	    max-width: 100%;
+	.video-section.mt-5 iframe {
+	    height: 400px;
+	}
+	.blogging-item a h3 {
+	    padding: 0px 20px;
+	    font-size: 18px;
 	}
 
+	.news-letter .contact-left {
+	    text-align: center;
+	    margin-top: 50px;
+	}
 	.who-left img{
 		width: 100%;
 	}
@@ -209,8 +229,11 @@ Max width 991px
 	}
 
 	.footer-top h3 {
-	    color: #fff;
+	    color: #000;
 	    font-size: 22px;
+	}
+	.header-social.footer ul {
+	    text-align: center;
 	}
 
 
@@ -242,8 +265,12 @@ Max width 768px
 	}
 	.header-bottom-right ul {
 	    margin: 0;
-	    margin-top: 3rem;
+	    margin-top: 3.3rem;
 	    text-align: right;
+	    background: #264059;
+	}
+	.header-section.sticky .header-bottom-right ul {
+	    margin-top: 3.9rem;
 	    background: #fff;
 	}
 	.header-bottom-right ul li a {
@@ -258,7 +285,7 @@ Max width 768px
 	.header-bottom-left img {
 	    width: 85px;
 	}
-	.header-social ul {
+	.header-section .header-social ul{
 	    position: absolute;
 	    top: 0;
 	    right: 100px;
@@ -268,17 +295,22 @@ Max width 768px
 	}
 	.banner-text h1 {
 	    text-transform: capitalize;
-	    font-size: 22px;
+	    font-size: 28px;
 	}
 	.banner-text p {
 	    font-size: 20px;
 	}
 	p.last-one {
-	    font-size: 12px;
+	    font-size: 17px;
+	    width: 100%;
+	}
+	.button-section a {
+	    font-size: 18px;
+	    padding: 8px 50px;
 	}
 
-	iframe {
-	    max-width: 100%;
+	.video-section.mt-5 iframe {
+	    height: 400px;
 	}
 
 	.who-left img{
@@ -402,8 +434,15 @@ Max width 576px
 	}
 	.header-bottom-right ul {
 	    margin: 0;
-	    margin-top: 3rem;
+	    margin-top: 3.2rem;
 	    text-align: right;
+	    background: #254059;
+	}
+	.header-section.sticky .header-bottom-left img {
+	    width: 85px;
+	}
+	.header-section.sticky .header-bottom-right ul {
+	    margin-top: 3.2rem;
 	    background: #fff;
 	}
 	.header-bottom-right ul li a {
@@ -414,40 +453,73 @@ Max width 576px
 	li.nav-item {
 	    display: block;
 	}
-	/* Nav end */
-	.header-bottom-left img {
-	    width: 85px;
-	}
-	.header-social ul {
+	.header-section .header-social ul{
 	    position: absolute;
 	    top: 0;
 	    right: 100px;
 	}
+	/* Nav end */
+	
+
+	/* Banner section */
 	.banner-section img {
 	    height: 300px!important;
 	}
 	.banner-text h1 {
 		text-transform: capitalize;
-		font-size: 25px;
-		margin-bottom: 15px;
+		font-size: 20px;
+		margin-bottom: 10px;
 	}
-
 	.banner-text p span {
-		margin: 0px 3px;
+	    margin: 0px 3px;
+	    letter-spacing: 1px;
 	}
-
 	.banner-text p {
 	    font-size: 15px;
+	    margin-bottom: 5px;
 	}
 	p.last-one {
-		left: 0;
-		transform: translateX(0%);
-		font-size: 13px;
-		margin: 0 40px;
+	    left: 0;
+	    transform: translateX(0%);
+	    font-size: 13px;
+	    width: 100%;
+	    text-align: center;
+	    letter-spacing: 1px;
+	}
+	.button-section a {
+	    font-size: 16px;
+	    padding: 5px 15px;
+	    margin: 0px 7px;
+	}
+	.banner-section .button-section {
+	    position: absolute;
+	    bottom: 12%;
 	}
 
-	iframe {
-	    max-width: 100%;
+	/* Banner section */
+
+
+	.video-section.mt-5 iframe {
+	    height: 400px;
+	}
+
+	/* Cryotherapy */
+	.cryotherapy-section.mt-5 {
+	    padding: 30px 0px;
+	}
+	.cryo-left p, .cryo-right p {
+	    font-size: 16px
+	}
+	/* End */
+
+	.blogging-item a h3 {
+	    padding: 0px 20px;
+	    font-size: 22px;
+	    margin-top: 15px;
+	    color: #1767a0;
+	}
+	.news-letter .contact-left {
+	    margin-top: 50px;
 	}
 
 	.who-left img{
@@ -461,7 +533,6 @@ Max width 576px
 	    margin-bottom: 15px;
 	}
 	.wet-therapy-section h3 {
-	    font-size: 16px;
 		text-align: center;
 	}
 

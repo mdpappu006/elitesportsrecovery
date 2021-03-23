@@ -15,7 +15,9 @@ ul li{
 a{
 	text-decoration: none
 }
-
+iframe {
+    width: 100%;
+}
 h2{
 	text-align: center;
 	margin-bottom: 30px;
@@ -28,14 +30,13 @@ a.nav-link:hover,.navbar-nav .nav-item.active a.nav-link {
 }
 
 .header-section {
-    position: sticky;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
     z-index: 9999;
-    background: #fff;
+    background: transparent;
     padding: 10px 0px;
-    box-shadow: 0px 0px 12px #292929;
     width: 100%;
     transition: 0.5s;
 
@@ -43,12 +44,25 @@ a.nav-link:hover,.navbar-nav .nav-item.active a.nav-link {
 
 /* Sticky section css */
 .header-section.sticky{
-	background: #55b6c7;
+	background: #fff;
 	transition: 0.5s;
+    box-shadow: 0px 0px 12px #292929;
 }
 
 .header-section.sticky ul li a{
-	color: #fff!important;
+	color: #000!important;
+}
+.header-section.sticky .nav-link:hover{
+    color: #fff!important;
+}
+.header-section.sticky .header-bottom-left img {
+    width: 100px;
+}
+.header-section.sticky .header-bottom-right ul {
+    margin-top: 0.3rem;
+}
+.header-section.sticky .header-social ul {
+    margin-top: 10px;
 }
 /* End sticky section css */
 
@@ -63,9 +77,10 @@ a.nav-link:hover,.navbar-nav .nav-item.active a.nav-link {
     text-align: right!important;
     width: 100%;
     display: block;
+    transition: 0.3s;
 }
 .header-bottom-right ul li a {
-    color: #3da3e6!important;
+    color: #fff!important;
     font-weight: bold;
     padding: 10px 25px!important;
     display: block;
@@ -85,7 +100,7 @@ a.nav-link:hover,.navbar-nav .nav-item.active a.nav-link {
 
 .header-social ul li a {
     display: block;
-    color: #3da3e6;
+    color: #fff;
     padding: 8px 10px;
     font-size: 22px;
 }
@@ -148,6 +163,35 @@ p.last-one {
     color: #ffffff;
     font-weight: normal;
 }
+.banner-section .button-section {
+    bottom: 25%;
+}
+.button-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+}
+.button-section a {
+    color: #fff;
+    font-size: 21px;
+    border: 2px solid rgb(255 255 255 / 66%);
+    padding: 8px 60px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.button-section a:hover {
+    opacity: 0.8;
+}
+.button-section a.book-now {
+    color: #3b6e92;
+    background: #fff;
+}
 
 /*About us page */
 .about .banner-text{
@@ -185,10 +229,14 @@ p.last-one {
     transition: 0.3s;
 }
 .wet-therapy-section:hover:after{
-    opacity: 0.1;
+    opacity: 0.3;
 
 }
 .wet-therapy-section h3 {
+    margin-bottom: 20px;
+    
+}
+.wet-therapy-section a{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -199,15 +247,36 @@ p.last-one {
     font-size: 25px;
     z-index: 99;
     letter-spacing: 1.5px;
+    width: 100%;
+    text-align: center;
 }
-
 .wet-therapy-section {
     position: relative;
     overflow: hidden;
 }
-.wet-therapy-section:hover a img{
+.wet-therapy-section:hover img{
 	transform: scale(1.2);
 }
+
+.wet-therapy-section a p {
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    padding: 10px 20px;
+    font-weight: 700;
+    width: 100%;
+    display: inline;
+}
+.wet-therapy-section:hover a p{
+    z-index: 99;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.wet-therapy-section a p:hover{
+    opacity: 0.8;
+}
+
 
 /*===========
 Wet therapy details section 
@@ -234,6 +303,130 @@ Wet therapy details section
     line-height: 2;
 }
 
+
+/* ==============
+Video section start
+==================
+*/
+.video-section.mt-5 iframe{
+    height: 600px;
+}
+/* ==============
+Video section end
+==================
+*/
+
+
+
+/* ==============
+Cryotherapy section start
+==================
+*/
+.cryotherapy-section.mt-5 {
+    background: #F2F2F2;
+    padding: 60px 0px;
+}
+.cryo-left p, .cryo-right p {
+    font-size: 18px;
+    color: #777777;
+    line-height: 1.8;
+}
+
+/* ==============
+Cryotherapy section end
+==================
+*/
+
+
+/* ==============
+Pricing section start
+==================
+*/
+.pricing-section {
+    background: url(../img/call-to-action-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 200px;
+}
+.pricing-section .button-section{
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+/* ==============
+Pricing section end
+==================
+*/
+
+
+/* ==============
+Blogging section start
+==================
+*/
+.blogging-item {
+    border: 1px solid #bdbdbd;
+}
+.blogging-item img{
+    width: 100%;
+}
+.blogging-item a h3 {
+    padding: 0px 20px;
+    font-size: 27px;
+    margin-top: 15px;
+    color: #1767a0;
+}
+.blogging-item p {
+    padding: 0px 20px;
+    margin-top: 15px;
+    color: #777;
+    font-size: 15px;
+}
+.blogging-item p span a{
+    color: #1767a0;
+}
+
+/* ==============
+Blogging section end
+==================
+*/
+
+
+/* ==============
+Newsletter section start
+==================
+*/
+.contact-us-section.news-letter.mt-5.mb-5{
+    background: transparent;
+}
+.contact-us-section.news-letter.mt-5.mb-5 .form-label {
+    color: #000!important;
+}
+.contact-us-section.news-letter.mt-5.mb-5 .contact-left h3,.contact-us-section.news-letter.mt-5.mb-5 .contact-left p {
+    color: #000;
+}
+.news-letter .logo-section.mb-4 {
+    text-align: center;
+}
+.news-letter .logo-section.mb-4 img {
+    width: 150px;
+}
+.news-letter form label span{
+    color: red;
+}
+.news-letter .contact-left {
+    text-align: center;
+    margin-top: 150px;
+}
+.contact-us-section.news-letter.mt-5.mb-5 .btn{
+    background: #000;
+    border: none;
+    color: #fff;
+    padding: 5px 20px;
+}
+/* ==============
+Newsletter section end
+==================
+*/
 
 
 
@@ -380,41 +573,44 @@ Footer section css
 	width: 150px;
 }
 .footer-top {
-    background: #272727;
+    background: url(../img/footer-bg.jpg) no-repeat;
     padding: 40px 0px;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 .footer-left p {
-    color: #fff;
     margin-top: 15px;
-    color: #dedede;
+    color: #000;
     margin-bottom: 0;
 }
 .footer-top h3{
-	color: #fff;
+	color: #000;
 }
 .footer-middle ul li {
     list-style: none;
     display: block;
 }
 .footer-middle ul li a {
-    color: #a9a4a4;
+    color: #272727;
     padding: 5px 0px;
     display: block;
 }
 .footer-middle ul li a:hover {
-    color: #fff;
+    color: #a7a3a3;
     transition: 0.3s;
 }
 .footer-right p {
-    color: #fff;
+    color: #272727;
     margin-bottom: 0;
 }
 .header-social.footer ul{
 	text-align: left;
 	margin-top: 0;
 }
-.footer-right p a,.header-social.footer ul li a{
-	color: #a9a4a4!important;
+.footer-right p a, .header-social.footer ul li a {
+    color: #0d6fb3!important;
 }
 
 .footer-bottom {
