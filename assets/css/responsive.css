@@ -5,14 +5,18 @@ Max width 1200px
 */
 @media (max-width:1199px){
 	.header-bottom-right ul li a {
-	    padding: 10px 4px!important;
+	    padding: 10px 0px!important;
+	    font-size: 16px;
 	}
 	.header-bottom-right ul li a i {
 	    font-size: 30px;
 	    vertical-align: sub;
 	}
 	.header-bottom-right ul {
-	    margin-top: 0.5rem;
+	    margin-top: 0rem;
+	}
+	.header-social ul li a {
+	    padding: 8px 4px;
 	}
 	.banner-text h1 {
 	    font-size: 33px;
