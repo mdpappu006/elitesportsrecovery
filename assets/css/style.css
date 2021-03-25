@@ -11,6 +11,7 @@ ul{
 ul li{
 	list-style: none;
 	display: inline-block;
+    margin: 0 15px;
 }
 a{
 	text-decoration: none
@@ -25,7 +26,7 @@ h2{
     font-weight: 700;
 }
 a.nav-link:hover,.navbar-nav .nav-item.active a.nav-link {
-    background: #3da3e6;
+    background: #4192d8;
     color: #fff!important;
 }
 
@@ -35,7 +36,7 @@ a.nav-link:hover,.navbar-nav .nav-item.active a.nav-link {
     right: 0;
     top: 0;
     z-index: 9999;
-    background: transparent;
+    background: #fff;
     padding: 10px 0px;
     width: 100%;
     transition: 0.5s;
@@ -50,7 +51,7 @@ a.nav-link:hover,.navbar-nav .nav-item.active a.nav-link {
 }
 
 .header-section.sticky ul li a{
-	color: #000!important;
+	color: #4192d8!important;
 }
 .header-section.sticky .nav-link:hover{
     color: #fff!important;
@@ -59,10 +60,10 @@ a.nav-link:hover,.navbar-nav .nav-item.active a.nav-link {
     width: 100px;
 }
 .header-section.sticky .header-bottom-right ul {
-    margin-top: 0.3rem;
+    margin-top: 0rem;
 }
 .header-section.sticky .header-social ul {
-    margin-top: 10px;
+    margin-top: 14px;
 }
 /* End sticky section css */
 
@@ -73,19 +74,25 @@ a.nav-link:hover,.navbar-nav .nav-item.active a.nav-link {
 
 .header-bottom-right ul {
     margin: 0;
-    margin-top: 0.5rem;
+    margin-top: 0rem;
     text-align: right!important;
     width: 100%;
     display: block;
     transition: 0.3s;
 }
 .header-bottom-right ul li a {
-    color: #fff!important;
+    color: #03a9f4!important;
     font-weight: bold;
-    padding: 10px 25px!important;
+    padding: 10px 10px!important;
     display: block;
     font-size: 17px;
     text-transform: uppercase;
+}
+.header-bottom-right ul li a i {
+    font-size: 28px;
+    margin-right: 10px;
+    vertical-align: sub;
+    margin-top: 10px;
 }
 .header-bottom-right ul li:last-child a {
     padding-right: 0;
@@ -94,16 +101,16 @@ a.nav-link:hover,.navbar-nav .nav-item.active a.nav-link {
 .header-social ul {
     text-align: right;
     margin: 0;
-    margin-top: 14px;
 }
 
 
 .header-social ul li a {
     display: block;
-    color: #fff;
+    color: #67b9ff;
     padding: 8px 10px;
-    font-size: 22px;
+    font-size: 24px;
 }
+
 
 
 /*===============
@@ -124,7 +131,7 @@ a.nav-link:hover,.navbar-nav .nav-item.active a.nav-link {
     opacity: 0.6;
 }
 .banner-section img {
-    height: 700px;
+    height: 800px;
     width: 100%;
 }
 .banner-text {
@@ -363,6 +370,9 @@ Pricing section end
 Blogging section start
 ==================
 */
+.blogging-section.mt-5 .container{
+    max-width: 1160px;
+}
 .blogging-item {
     border: 1px solid #bdbdbd;
 }
@@ -395,6 +405,10 @@ Blogging section end
 Newsletter section start
 ==================
 */
+.contact-us-section.news-letter.mt-5.mb-5 .container{
+    border-top: 1px solid #d2cccc;
+    padding-top: 30px;
+}
 .contact-us-section.news-letter.mt-5.mb-5{
     background: transparent;
 }
@@ -497,6 +511,7 @@ Who section start
     font-weight: 700;
     color: #3a3a3a;
     text-transform: capitalize;
+    text-align: center;
 }
 .who-right p{
     color: #2f2e2e;
@@ -692,3 +707,21 @@ scroll to top
 Scroll to top css end
 ===================================
 */
+
+.who-left img.wel-imgs{
+    width: 100%;
+    height: 450px;
+}
+
+.who-left img{
+    width: 100%;
+    
+}
+
+.faq-section.events h2{
+    width: 100%;
+}
+
+.faq-section.events p{
+    font-size: 22px;
+}

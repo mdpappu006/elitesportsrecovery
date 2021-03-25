@@ -5,7 +5,14 @@ Max width 1200px
 */
 @media (max-width:1199px){
 	.header-bottom-right ul li a {
-	    padding: 10px 15px!important;
+	    padding: 10px 4px!important;
+	}
+	.header-bottom-right ul li a i {
+	    font-size: 30px;
+	    vertical-align: sub;
+	}
+	.header-bottom-right ul {
+	    margin-top: 0.5rem;
 	}
 	.banner-text h1 {
 	    font-size: 33px;
@@ -57,7 +64,7 @@ Max width 991px
 		color: #3da3e6!important;
 	}
 	.header-section.sticky .header-social ul li a{
-		color: #000!important;
+		color: #3da3e6!important;
 	}
 	.header-section.sticky ul li a:hover{
 		color: #fff!important;
@@ -90,7 +97,7 @@ Max width 991px
 	    margin: 0;
 	    margin-top: 3.9rem;
 	    text-align: right;
-	    background: #264059;
+	    background: #2e3234;
 	}
 	.header-section.sticky .header-bottom-right ul {
 	    margin-top: 3.9rem;
@@ -265,12 +272,12 @@ Max width 768px
 	}
 	.header-bottom-right ul {
 	    margin: 0;
-	    margin-top: 3.3rem;
+	    margin-top: 3.25rem;
 	    text-align: right;
-	    background: #264059;
+	    background: #2e3234;
 	}
 	.header-section.sticky .header-bottom-right ul {
-	    margin-top: 3.9rem;
+	    margin-top: 3.2rem;
 	    background: #fff;
 	}
 	.header-bottom-right ul li a {
@@ -282,7 +289,7 @@ Max width 768px
 	    display: block;
 	}
 	/* Nav end */
-	.header-bottom-left img {
+	.header-bottom-left img,.header-section.sticky .header-bottom-left img  {
 	    width: 85px;
 	}
 	.header-section .header-social ul{
@@ -436,7 +443,7 @@ Max width 576px
 	    margin: 0;
 	    margin-top: 3.2rem;
 	    text-align: right;
-	    background: #254059;
+	    background: #2e3234;
 	}
 	.header-section.sticky .header-bottom-left img {
 	    width: 85px;
@@ -444,12 +451,18 @@ Max width 576px
 	.header-section.sticky .header-bottom-right ul {
 	    margin-top: 3.2rem;
 	    background: #fff;
+		text-align: left!important;
 	}
 	.header-bottom-right ul li a {
 	    padding: 15px 10px!important;
 	    font-size: 15px;
 	    border-bottom: 1px solid #ddd;
 	}
+
+	.header-bottom-right ul li a i {
+		font-size: 25px;
+	}
+
 	li.nav-item {
 	    display: block;
 	}
