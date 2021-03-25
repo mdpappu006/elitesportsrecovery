@@ -8,10 +8,10 @@ body {
 ul{
 	padding: 0;
 }
-ul li{
-	list-style: none;
-	display: inline-block;
-    margin: 0 15px;
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
 }
 a{
 	text-decoration: none
@@ -63,7 +63,7 @@ a.nav-link:hover,.navbar-nav .nav-item.active a.nav-link {
     margin-top: 0rem;
 }
 .header-section.sticky .header-social ul {
-    margin-top: 14px;
+    margin-top: 0px;
 }
 /* End sticky section css */
 
@@ -106,8 +106,8 @@ a.nav-link:hover,.navbar-nav .nav-item.active a.nav-link {
 
 .header-social ul li a {
     display: block;
-    color: #67b9ff;
-    padding: 8px 10px;
+    color: #3da3e6;
+    padding: 8px 5px;
     font-size: 24px;
 }
 
@@ -131,7 +131,7 @@ a.nav-link:hover,.navbar-nav .nav-item.active a.nav-link {
     opacity: 0.6;
 }
 .banner-section img {
-    height: 800px;
+    height: 850px;
     width: 100%;
 }
 .banner-text {
@@ -391,8 +391,21 @@ Blogging section start
     color: #777;
     font-size: 15px;
 }
-.blogging-item p span a{
+.blogging-item span a{
     color: #1767a0;
+    padding: 0px 20px;
+}
+
+.blog-part-section img {
+    width: 100%;
+}
+.blog-part-section h3 {
+    margin-top: 30px;
+}
+.blog-part-section p,.blog-part-section ol li {
+    color: #828282;
+    font-size: 20px;
+    line-height: 1.8;
 }
 
 /* ==============

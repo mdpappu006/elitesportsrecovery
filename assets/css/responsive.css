@@ -70,7 +70,7 @@ Max width 991px
 		color: #fff!important;
 	}
 	.header-section.sticky .header-social ul{
-		margin-top: 14px;
+		margin-top: 0px;
 		transition: 0.3s;
 	}
 	
@@ -118,7 +118,7 @@ Max width 991px
 	}
 	.header-section .header-social ul {
 	    position: absolute;
-	    top: 5px;
+	    top: 20px;
 	    right: 100px;
 	}
 	.banner-section img {
@@ -294,7 +294,7 @@ Max width 768px
 	}
 	.header-section .header-social ul{
 	    position: absolute;
-	    top: 0;
+	    top: 15px;
 	    right: 100px;
 	}
 	.banner-section img {
@@ -468,7 +468,7 @@ Max width 576px
 	}
 	.header-section .header-social ul{
 	    position: absolute;
-	    top: 0;
+	    top: 15px;
 	    right: 100px;
 	}
 	/* Nav end */
