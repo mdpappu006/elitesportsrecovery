@@ -747,3 +747,10 @@ Scroll to top css end
     font-size: 22px;
 }
 
+.fa-quote-left,.fa-quote-right{
+    font-size: 11px;
+    margin: 0 5px;
+    position: relative;
+    bottom: 8px;
+}
+
